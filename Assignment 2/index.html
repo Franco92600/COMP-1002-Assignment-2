@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viwport" content="width=device-width, intial-scale=1">
+        <meta name="descpriton" content="Assignment 2 Pizza Webpage">
+        <meta name="robots" content="noindex, nofollow">
+        <title>S24 COMP 1002 Assignment 2 </title>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Pacifico&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+        <!-- css file -->
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div>
+                <!-- Main logo -->
+                <a href = "index.html">
+                    <img src= "./img/logo.png" alt="Mama's Pizza Logo">
+                </a>
+            </div>
+            <div>
+                <h1>Mama's Pizza!</h1>
+            </div>
+            <nav>
+                <!-- Links on right side -->
+                <menu>
+                    <li><a href = "#">Store Locations</a></li>
+                    <li><a href = "#">My Account</a></li>
+                    <li><a href = "#">My Cart</a></li>
+                </menu>
+            </nav>
+        </header>
+        <section class="masthead">
+            <!-- masthead -->
+            <img src="./img/banner.jpg" alt="Pizza Banner">
+        </section>
+
+        <main>
+
+            <div>
+                <form action="somephpfile" method="post" enctype="multipart/form-data">
+                    <!-- pizza order info -->
+                    <label>Start Your Order</label>
+                    <input type="radio" id="delivery" name="where" value="Deliver">
+                    <label for="delivery">Delivery</label>
+                    <input type="radio" id="carryOut" name="where" value="Carry Out">
+                    <label for="carryOut">Carry Out</label>
+                    <br>
+                    <label>Quantity</label>
+                    <input type="number" name="quantity" min="1" max="10">
+                    <br>
+                    <label>Choose Your Size</label>
+                    <input type="radio" id="small" name="size" value="small">
+                    <label for="small">10" Small</label>
+                    <input type="radio" id="medium" name="size" value="medium">
+                    <label for="medium">12" Medium</label>
+                    <input type="radio" id="large" name="size" value="large">
+                    <label for="large">14" Large</label>
+                    <br>
+                    <label>Choose Your Crust</label>
+                    <input type="radio" id="regular" name="crust" value="regular">
+                    <label for="regular">Regular</label>
+                    <input type="radio" id="thin" name="crust" value="thin">
+                    <label for="thin">Thin</label>
+                    <input type="radio" id="thick" name="crust" value="thick">
+                    <label for="thick">Regular</label>
+                    <br>
+                    <label>Sauce: </label>
+                    <input type="radio" id="regular1" name="sauce" value="regular1">
+                    <label for="regular1">Regular</label>
+                    <input type="radio" id="extra" name="sauce" value="extra">
+                    <label for="extra">Extra</label>
+                    <input type="radio" id="none" name="sauce" value="none">
+                    <label for="none">None</label>
+                    <br>
+                    <label>Cheese: </label>
+                    <input type="radio" id="regular2" name="cheese" value="regular2">
+                    <label for="regular2">Regular</label>
+                    <input type="radio" id="extra1" name="cheese" value="extra1">
+                    <label for="extra1">Extra</label>
+                    <input type="radio" id="none1" name="cheese" value="none1">
+                    <label for="none1">None</label>
+                    <br>
+                    <label>Toppings</label>
+                    <br>
+                    <label>Meats:</label>
+                    <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                    <input type="checkbox" id="sausage" name="toppings" value="sausage">
+                    <label for="sausage">Sausage</label>
+                    <input type="checkbox" id="grilledChicken" name="toppings" value="grilledChicken">
+                    <label for="grilledChicken">Grilled Chicken</label>
+                    <input type="checkbox" id="ham" name="toppings" value="ham">
+                    <label for="ham">Bacon</label>
+                    <br>
+                    <label>Vegetables:</label>
+                    <input type="checkbox" id="mushroom" name="toppings" value="mushroom">
+                    <label for="mushroom">Mushroom</label>
+                    <input type="checkbox" id="greenPepper" name="toppings" value="greenPepper">
+                    <label for="greenPepper">Green Pepper</label>
+                    <input type="checkbox" id="blackOlives" name="toppings" value="blackOlives">
+                    <label for="blackOlives">Black Olives</label>
+                    <input type="checkbox" id="onion" name="toppings" value="onion">
+                    <label for="onion">Onion</label>
+                    <input type="checkbox" id="jalapeno" name="toppings" value="jalapeno">
+                    <label for="jalapeno">Jalapeno</label>
+                    <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+                    <label for="pineapple">Pineapple</label>
+                    <br>
+                    <br>
+                    <!-- Contact info -->
+                    <label>Contact Info</label>
+                    <br>
+                    <label>Your Name</label>
+                    <br>
+                    <input type="text" name="firstname" required placeholder="First">
+                    <input type="text" name="lastname" required placeholder="Last" >
+                    <br>
+                    <br>
+                    <label>Email Address</label>
+                    <br>
+                    <input type="email" name="email" required>
+                    <br>
+                    <br>
+                    <label>Phone Number</label>
+                    <br>
+                    <input type="tel" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(***)***-****" required>
+                    <br>
+                    <br>
+                    <!-- payment info -->
+                    <label>Payment Info</label>
+                    <br>
+                    <br>
+                    <label>Type</label>
+                    <input type="radio" id="visa" name="type" value="visa">
+                    <label for="visa">Visa</label>
+                    <input type="radio" id="mastercard" name="type" value="mastercard">
+                    <label for="mastercard">MasterCard</label>
+                    <input type="radio" id="visaDebit" name="type" value="visaDebit">
+                    <label for="visaDebit">Visa Debit</label>
+                    <input type="radio" id="mastercardDebit" name="type" value="mastercardDebit">
+                    <label for="mastercardDebit">MasterCard Debit</label>
+                    <br>
+                    <label>Card Number</label>
+                    <br>
+                    <input type="text" name="cardNumber" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required>
+                    <br>
+                    <label>Expiry</label>
+                    <br>
+                    <input type="text" name="expiry" pattern="[00-12]{2}/[24-34]{2}" required placeholder="MM/YY">
+                    <br>
+                    <label>Cardholder Name</label>
+                    <br>
+                    <input type="text" name="cardholder" required>
+                    <br>
+                    <label>CVV</label>
+                    <br>
+                    <input type="text" name="CVV" required pattern="[0-9]{3}">
+                    <br>
+                    <label>Billing Postal Code</label>
+                    <br>
+                    <input type="text" name="postalCode" pattern="[0-9||a-z]{3} [0-9]||a-z]{3}" required placeholder="A0A 0A0">
+                    <br>
+                    <input type="submit" name="Send">
+                </form>
+            </div>
+
+        </main>
+
+        <footer>
+            <div>
+                    <!-- footer image -->
+                    <a href = "index.html">
+                        <img src= "./img/logo.png" alt="Mama's Pizza Logo">
+                    </a>
+            </div>
+            <div>
+                <p>Office</p>
+                <p>
+                    89 Centre Street
+                    Vaughn ON
+                    L6L 58C
+                </p>
+            </div>
+            <div>
+                <!-- contact info -->
+                <p>Contact Info</p>
+                <p>
+                    (705)321-4567
+                    <br>
+                    info@mamaspizza.ca
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
